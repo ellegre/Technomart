@@ -2,7 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 1200px;
-	font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-family: 'Cuprum', Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -185,6 +186,7 @@ a {
 }
 
 .telephone {
+	position: relative;
 	color: #ee3643;
 	font-family: Cuprum;
 	font-size: 21px;
@@ -196,6 +198,20 @@ a {
 	padding-right: 52px;
 	margin-top: 7px;
 	border: 3px solid #ffffff;
+}
+
+.telephone::before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	width: 19px;
+	height: 19px;
+	background-image: url("img/phone.svg");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+  	opacity: 0.5;
+  	background-color: red;
 }
 
 .company-adress {
