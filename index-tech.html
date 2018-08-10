@@ -3,22 +3,30 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Техномарт</title>
-		<link rel="stylesheet" href="css/style-tech.css">
-		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/style-tech.css">	
 	</head>
 	<body>
 		<header class="main-header">
 			<nav class="order-navigation">
-				<div class="order-container">
-					<a class="logo">Техномарт</a></li>
-					<ul class="order-navigation-list">
-						<li><a class="search" href="search.html">Поиск</a></li>
-						<li><a class="bookmarks" href="bookmarks.html">Закладки: 0</a></li>
-						<li><a class="basket" href="basket.html">Корзина: 0</a></li>
-						<li><a class="current">Оформить заказ</a></li>
-					</ul>
+				<div class="header-top">
+					<div class="container">
+						<a class="logo">Техномарт</a></li>
+						<ul class="order-navigation-list">
+							<li>
+								<form class="search-form">
+									<input type="search" placeholder="Поиск">
+									<button class="visually-hidden" type="submit">
+								</form>
+							</li>
+							<li><a class="bookmarks" href="bookmarks.html">Закладки: 0</a></li>
+							<li><a class="basket" href="basket.html">Корзина: 0</a></li>
+							<li><a class="current">Оформить заказ</a></li>
+						</ul>
+					</div>
 				</div>
 				<div class="container">
 					<div class="adress-and-registration">
@@ -48,33 +56,45 @@
 			<h1 class="visually-hidden">Товары и услуги компании Техномарт</h1>
 			<section class="product">
 				<h2 class="visually-hidden">Наши товары</h2>
-				<ul class="goods-list">
-					<li class="goods-list-item">
-						<h3>Материалы</h3>
-						<button class="button">На любой вкус</button>
-					</li>
-					<li class="goods-list-item">
-						<h3>Инструмент</h3>
-						<button class="button">На все случаи</button>
-					</li>
-					<li class="goods-list-item">
-						<h3>Техника</h3>
-						<button class="button">Для стройки</button>
-					</li>
-					<li class="goods-list-item">
-						<h3>Дрели</h3>
-						<p>Соседям на радость</p>
-						<button class="button">Открыть каталог</button>
-					</li>
-					<li class="goods-list-item">
-						<h3>Скидки 50%</h3>
-						<button class="button">На 350 товаров</button>
-					</li>
-					<li class="goods-list-item">
-						<h3>Доставка</h3>
-						<button class="button">Бесплатно</button>
-					</li>
-				</ul>
+				<div class="container">
+					<div class="row">
+						<div class="col-4">
+							<div class="category materials">
+								<h3>Материалы</h3>
+								<a class="" href="#">На любой вкус</a>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="category instrument">
+								<h3>Инструмент</h3>
+								<a class="" href="#">На все случаи</a>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="category for_building">
+								<h3>Техника</h3>
+								<a class="" href="#">Для стройки</a>
+							</div>
+						</div>
+						<div class="col-8">							
+							<div class="main-slider">
+							  <div class="slide-item">1</div>
+							  <div class="slide-item">2</div>
+							  <div class="slide-item">3</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="category discounts">
+								<h3>Скидки 50%</h3>
+								<a class="" href="#">На 350 товаров</a>
+							</div>
+							<div class="category delivery">
+								<h3>Доставка</h3>
+								<a class="" href="#">Бесплатно</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="popular-goods">
 				<div class="popular-goods-container">
@@ -129,10 +149,15 @@
 					<button class="button">Все производители</button>
 				</div>
 				<ul class="popular-producers-list">
-					<li><img
-
+					<li><img>
 		</main>
 		<footer>
 		</footer>
+		<script src="js/jquery-3.3.1.min.js">
+		</script>
+		<script src="js/slick.min.js">	
+		</script>
+		<script src="js/script.js">
+		</script>
 	</body>
 </html>

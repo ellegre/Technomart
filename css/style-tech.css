@@ -24,6 +24,12 @@ a {
 	width: 940px;
  	padding: 0 180;
   	margin: 0 auto;
+
+}
+
+.header-top {
+	background-color: #293449;
+	margin-bottom: 28px;
 }
 
 .order-navigation {
@@ -43,12 +49,11 @@ a {
 	line-height: 18px;	
 }
 
-.order-container {
+.main-header .container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	background-color: #293449;
-	margin-bottom: 28px;
+	
 }
 
 .order-navigation-list a {
@@ -84,7 +89,7 @@ a {
 	left: 20px;
 	width: 17px;
 	height: 17px;
-	background-image: url("img/icon-search.svg");
+	background-image: url("../img/icon-search.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.3;
@@ -114,7 +119,6 @@ a {
 .order-navigation-list .bookmarks {
 	position: relative;
 	padding-left: 50px;
-	margin-left: 18px;	
 }
 
 .order-navigation-list .bookmarks::before {
@@ -124,11 +128,10 @@ a {
 	left: 20px;
 	width: 14px;
 	height: 16px;
-	background-image: url("img/icon-bookmarks.svg");
+	background-image: url("../img/bookmark.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.3;
-  	background-color: red;
 }
 
 .order-navigation-list .basket {
@@ -144,18 +147,16 @@ a {
 	left: 20px;
 	width: 15px;
 	height: 15px;
-	background-image: url("img/cart-icon.svg");
+	background-image: url("../img/cart.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.3;
-  	background-color: red;
 }
 
 .logo {
 	display: block;
 	padding: 12px 55px;
 	vertical-align: middle;
-	margin-left: 322px;
 	width: 110px;
 	color: #ffffff;
 	font-family: Cuprum;
@@ -174,6 +175,24 @@ a {
 
 .logo:active {
 	background-color: #ba2732;
+}
+
+.search-form input[type="search"] {
+	padding-left: 49px;
+	padding-right: 62px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	background-color: #293449;
+	border: none;
+	background-image: url("../img/lupa.svg");
+	background-repeat: no-repeat;
+	background-position: 7% 70%;
+	border: none;
+}
+
+input::placeholder {
+	
+	color: white;
 }
 
 .i-shop {
@@ -203,15 +222,14 @@ a {
 .telephone::before {
 	content: "";
 	position: absolute;
-	top: 15px;
+	top: 12px;
 	left: 20px;
-	width: 19px;
-	height: 19px;
-	background-image: url("img/phone.svg");
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/phone.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.5;
-  	background-color: red;
 }
 
 .company-adress {
@@ -267,11 +285,10 @@ a {
 	left: 20px;
 	width: 20px;
 	height: 17px;
-	background-image: url("img/icon-login.svg");
+	background-image: url("../img/icon-login.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.3;
-  	background-color: red;
 }
 
 .user-navigation-list .login-link:hover::before,
@@ -291,7 +308,6 @@ a {
 
 .order-navigation-list .current {
 	background-color: #63a63e;
-	margin-left: 8px;
 }
 
 .order-navigation-list .current:hover,
@@ -354,6 +370,100 @@ a {
 	margin-left: 65px;
 }
 
+
+.col-1 {
+	box-sizing: border-box;
+	flex: 0 0 8.3333%;
+	max-width: 8.3333%;
+	padding: 0 10px;
+}
+
+.col-2 {
+	box-sizing: border-box;
+	flex: 0 0 8.3333%;
+	max-width: 8.3333%;
+	padding: 0 10px;
+}
+
+.col-3 {
+	box-sizing: border-box;
+	flex: 0 0 8.3333%;
+	max-width: 8.3333%;
+	padding: 0 10px;
+}
+
+.col-4 {
+	box-sizing: border-box;
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	padding: 0 10px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+}
+
+.col-8 {
+	box-sizing: border-box;
+	flex: 0 0 66.66%;
+	max-width: 66.66%;
+	padding: 0 10px;
+}
+
+.category {
+	background-color: yellow;
+	padding-bottom: 23px;
+	padding-left: 23px;
+}
+
+.category h3 {
+	margin: 0;
+	margin-bottom: 12px;
+	padding-top: 18px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	
+}
+
+.category a {
+	display: block;
+	width: 135px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 10px 0px;
+	text-align: center;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	border-radius: 2%;
+	background-color: #000000;
+	opacity: 0.1;
+}
+
+.category a:hover,
+.category a:focus {
+	opacity: 0.2;
+}
+
+.category a:active {
+	opacity: 0.3;
+}
+
+.materials {
+	background-image: url('../img/materials.png');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;
+	background-size: cover;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -369,4 +479,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
