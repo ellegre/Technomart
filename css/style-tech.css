@@ -397,6 +397,7 @@ input::placeholder {
 	flex: 0 0 33.33%;
 	max-width: 33.33%;
 	padding: 0 10px;
+	margin-bottom: 20px;
 }
 
 .row {
@@ -410,6 +411,7 @@ input::placeholder {
 	flex: 0 0 66.66%;
 	max-width: 66.66%;
 	padding: 0 10px;
+	margin-bottom: 20px;
 }
 
 .category {
@@ -462,6 +464,100 @@ input::placeholder {
 	background-repeat: no-repeat;
 	background-position: 76% 50%;
 	background-size: cover;
+}
+
+.instrument {
+	background-image: url('../img/instrument.png');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;
+	background-size: cover;
+}
+
+.for-building {
+	background-image: url('../img/for_building.png');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;
+	background-size: cover;
+}
+
+.discounts {
+	margin-bottom: 20px;
+	background-image: url('../img/discounts.png');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;
+	background-size: cover;
+}
+
+.delivery {
+	background-image: url('../img/delivery.png');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;
+	background-size: cover;
+}
+
+.first {
+	background-image: url('../img/drills.jpg');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;	
+}
+
+.second {
+	background-image: url('../img/puncher.jpg');
+	background-repeat: no-repeat;
+	background-position: 76% 50%;	
+}
+
+.slide-item {
+	padding-top: 23px;
+	padding-left: 26px;
+	padding-bottom: 21px;
+	background-color: grey;
+}
+
+.slide-item h3 {
+	margin: 0;
+	margin-bottom: 2px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+.slide-item p {
+	margin: 0;
+	margin-bottom: 120px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.slide-link {
+	display: block;
+	padding: 11px 0;
+	width: 195px;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #ee3643;
+}
+
+.slide-link:hover,
+.slide-link:focus {
+	background-color: #ca2c37;
+}
+
+.slider-link:active {
+	background-color: #ba2732;
+
 }
 
 .visually-hidden:not(:focus):not(:active),
