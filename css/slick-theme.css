@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -20px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +97,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 20px;
 }
 [dir='rtl'] .slick-next
 {
@@ -182,17 +182,19 @@
     line-height: 20px;
 
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -55px;
+    left: -7px;
 
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: "";
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #ffffff;
+
+    background-image: url("../img/button_white.svg");
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +202,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: white;
 }
