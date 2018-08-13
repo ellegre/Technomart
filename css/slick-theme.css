@@ -23,10 +23,10 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 51%;
 
     display: block;
-
+    z-index: 3;
     width: 20px;
     height: 20px;
     padding: 0;
@@ -79,7 +79,7 @@
 
 .slick-prev
 {
-    left: -20px;
+    left: 26px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -107,6 +107,7 @@
 .slick-next:before
 {
     content: '→';
+
 }
 [dir='rtl'] .slick-next:before
 {
@@ -194,7 +195,7 @@
     opacity: .25;
     color: #ffffff;
 
-    background-image: url("../img/button_white.svg");
+    background-image: url("../img/icon-3.svg");
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

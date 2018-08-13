@@ -29,7 +29,7 @@ a {
 
 .header-top {
 	background-color: #293449;
-	margin-bottom: 28px;
+	margin-bottom: 30px;
 }
 
 .order-navigation {
@@ -118,17 +118,18 @@ a {
 
 .order-navigation-list .bookmarks {
 	position: relative;
-	padding-left: 50px;
+	padding-left: 46px;
+	padding-top: 11px;
 }
 
 .order-navigation-list .bookmarks::before {
 	content: "";
 	position: absolute;
-	top: 15px;
+	top: 12px;
 	left: 20px;
 	width: 14px;
 	height: 16px;
-	background-image: url("../img/bookmark.svg");
+	background-image: url("../img/icon-bookmark.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.3;
@@ -136,18 +137,19 @@ a {
 
 .order-navigation-list .basket {
 	position: relative;
-	padding-left: 50px;
+	padding-left: 46px;
+	padding-top: 11px;
 	margin-left: 10px;
 }
 
 .order-navigation-list .basket::before {
 	content: "";
 	position: absolute;
-	top: 15px;
-	left: 20px;
+	top: 13px;
+	left: 16px;
 	width: 15px;
 	height: 15px;
-	background-image: url("../img/cart.svg");
+	background-image: url("../img/icon-cart.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.3;
@@ -155,7 +157,10 @@ a {
 
 .logo {
 	display: block;
-	padding: 12px 55px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	padding-right: 55px;
+	padding-left: 55px;
 	vertical-align: middle;
 	width: 110px;
 	color: #ffffff;
@@ -165,7 +170,8 @@ a {
 	line-height: 24px;
 	text-transform: uppercase;
 	background-color: #ee3643;
-	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+	border-bottom: 5px solid rgba(0, 0, 0, 0.24); 
+	margin-bottom: -5px;
 }
 
 .logo:hover,
@@ -180,13 +186,13 @@ a {
 .search-form input[type="search"] {
 	padding-left: 49px;
 	padding-right: 62px;
-	padding-top: 13px;
+	padding-top: 12px;
 	padding-bottom: 13px;
 	background-color: #293449;
 	border: none;
-	background-image: url("../img/lupa.svg");
+	background-image: url("../img/icon-search.svg");
 	background-repeat: no-repeat;
-	background-position: 7% 70%;
+	background-position: 7% 41%;
 	border: none;
 }
 
@@ -226,7 +232,7 @@ input::placeholder {
 	left: 20px;
 	width: 25px;
 	height: 25px;
-	background-image: url("../img/phone.svg");
+	background-image: url("../img/icon-phone.svg");
   	background-repeat: no-repeat;
   	background-position: 0 0;
   	opacity: 0.5;
@@ -236,7 +242,7 @@ input::placeholder {
 	margin: 0;
 	margin-top: -18px;
 	padding: 0;
-	padding-left: 10px;
+	padding-left: 13px;
 	color: #32425c;
 	font-family: Cuprum;
 }
@@ -297,7 +303,7 @@ input::placeholder {
 } 
 
 .user-navigation-list .registration-link {
-	padding-left: 21px;
+	padding-left: 25px;
 	padding-right: 22px;
 	padding-top: 14px;
 	padding-bottom: 15px;
@@ -308,6 +314,7 @@ input::placeholder {
 
 .order-navigation-list .current {
 	background-color: #63a63e;
+	margin-left: 9px;
 }
 
 .order-navigation-list .current:hover,
@@ -363,7 +370,7 @@ input::placeholder {
 
 .i-shop {
 	width: 200px;
-	margin-left: 55px;
+	margin-left: 52px;
 }
 
 .adress {
@@ -387,8 +394,8 @@ input::placeholder {
 
 .col-3 {
 	box-sizing: border-box;
-	flex: 0 0 8.3333%;
-	max-width: 8.3333%;
+	flex: 0 0 25%;
+	max-width: 25%;
 	padding: 0 10px;
 }
 
@@ -423,7 +430,7 @@ input::placeholder {
 .category h3 {
 	margin: 0;
 	margin-bottom: 12px;
-	padding-top: 18px;
+	padding-top: 20px;
 	color: #ffffff;
 	font-family: Cuprum;
 	font-size: 24px;
@@ -558,6 +565,77 @@ input::placeholder {
 .slider-link:active {
 	background-color: #ba2732;
 
+}
+
+.goods-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.popular {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 21px;
+	padding-left: 30px;
+	padding-right: 24px;
+	background-color: #f9f5f0;
+}
+
+.popular h2 {
+	margin-top: 31px;
+	color: #32425c;
+	font-family: Cuprum;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.popular a {
+	display: block;
+	vertical-align: middle;
+	padding: 10px 0;
+	margin-left: auto;
+	margin-top: 7px;
+	color: #ffffff;
+	width: 253px;
+	text-align: center;
+	background-color: #ee3643;
+	border-radius: 2px;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.popular-goods-list-item {
+	margin-bottom: 21px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+	min-height: 318px;
+}
+
+.first-price {
+	color: #a9a9a9;
+	font-family: "PT Sans";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	text-decoration: line-through;
+	text-transform: uppercase;
+}
+
+.popular-goods-list-item h3 {
+	color: #000000;
+	font-family: "PT Sans";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
 }
 
 .visually-hidden:not(:focus):not(:active),
