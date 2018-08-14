@@ -691,7 +691,36 @@ input::placeholder {
 
 .action {
 	display: non;
+
 }
+
+.buttons {
+	margin: 0 auto;
+	padding: 0 15px;
+	padding-top: 44px;
+	margin-bottom: 48px;
+}
+ 
+.button {
+	padding: 10px 0px;
+	text-align: center;
+	box-sizing: border-box;
+	min-width: 135px;
+	margin-bottom: 2px;
+
+
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #63a63e;
+	box-shadow: inset 0 -3px 0 #367315;
+	border-radius: 3px;
+
+}
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
