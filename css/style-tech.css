@@ -613,7 +613,9 @@ input::placeholder {
 	text-transform: uppercase;
 }
 
-.popular-goods-list-item {
+.goods-list-item {
+	position: relative;
+	width: 220px;
 	margin-bottom: 21px;
 	border: 1px solid #eaeaea;
 	text-align: center;
@@ -621,6 +623,8 @@ input::placeholder {
 }
 
 .first-price {
+	margin: 0;
+	margin-bottom: 20px;
 	color: #a9a9a9;
 	font-family: "PT Sans";
 	font-size: 17px;
@@ -630,12 +634,63 @@ input::placeholder {
 	text-transform: uppercase;
 }
 
-.popular-goods-list-item h3 {
+.goods-list-item h3 {
+	margin: 0;
+	margin-bottom: 10px;
 	color: #000000;
 	font-family: "PT Sans";
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 20px;
+}
+
+.goods-list-item img {
+	margin-bottom: 5px;
+	margin-left: -6px;
+	margin-top: 6px;
+}
+
+.last-price {
+	margin:0;
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.last-price:after {
+	position: absolute;
+	content: "";
+	top: 260px;
+	left: 43px;
+	width: 145px;
+	height: 40px;
+	background-image: url("../img/red-button.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	z-index: -1;
+} 
+
+.new .last-price {
+	margin-top: 47px;
+}
+
+.new .last-price:before {
+	position: absolute;
+	content: "";
+	top: 2px;
+	right: -9px;
+	width: 70px;
+	height: 70px;
+	background-image: url("../img/new_flag.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+} 
+
+.action {
+	display: non;
 }
 
 .visually-hidden:not(:focus):not(:active),
