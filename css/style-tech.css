@@ -813,3 +813,87 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.footer-top {
+	background-color: #32425c;
+}
+
+.footer-bottom {
+	background-color: #293449;
+}
+
+.footer-adress {
+	width: 525px;
+}
+
+.footer-adress p {
+	margin: 0;
+	color: #f1f5f7;
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.footer-navigation {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-top .container {
+	display: flex;
+}
+
+.first-navigation-list,
+.second-navigation-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.first-navigation-list {
+	margin-left: 75px;
+}
+
+.first-navigation-list a {
+	display: block;
+	margin-right: 58px;
+	color: #f1f5f7;
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+
+}
+
+.first-navigation-list a:focus,
+.first-navigation-list a:hover {
+	text-decoration: underline;
+}
+
+.first-navigation-list a:active {
+	color: #4c5a70;
+}
+
+.second-navigation-list a {
+	display: block;
+	color: #ffd180;
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+
+}
+
+.second-navigation-list a:focus,
+.second-navigation-list a:hover {
+	text-decoration: underline;
+}
+
+.second-navigation-list a:active {
+	color: #767268;
+}
+
+
