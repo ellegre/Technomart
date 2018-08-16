@@ -1011,3 +1011,108 @@ input[type="radio"].visually-hidden {
 .developed {
 	margin-right: -71px;
 }
+
+.about-company {
+	padding-bottom: 65px;
+}
+
+.about-company h3 {
+	font-family: Cuprum;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+}
+
+.about-company p {
+	font-family: "PT Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 24px;
+}
+
+.about-company a {
+	display: block;
+	vertical-align: middle;
+	padding: 10px 0;
+	margin-right: auto;
+	margin-top: 7px;
+	color: #ffffff;
+	width: 220px;
+	text-align: center;
+	background-color: #ee3643;
+	border-radius: 2px;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.about-company button {
+	display: block;
+	box-sizing: border-box;
+	width: 300px;
+	vertical-align: middle;
+	padding: 10px 0;
+	margin-right: auto;
+	margin-top: 7px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #ee3643;
+	border-radius: 2px;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	border: none;
+}
+
+.companies-list {
+	margin-top: -5px;
+	margin-bottom: 37px;
+	list-style: none;
+	font-family: Cuprum;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.companies-list li {
+	position: relative;
+	margin-bottom: 21px;
+}
+
+.companies-list li:before {
+	position: absolute;
+	content: "";
+	top: 10px;
+	left: -40px;
+	width: 27px;
+	height: 3px;
+	background-image: url("../img/red_line.png");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
+	margin-bottom: 21px;
+}
+
+.self-service {
+	margin-right: 10px;
+	margin-bottom: 28px;
+}
+
+.shopping {
+	margin-right: 30px;
+}
+
+.cooperation {
+	margin-right: 178px;
+}
+
+.map {
+	margin-bottom: 25px;
+	margin-top: 7px;
+}
