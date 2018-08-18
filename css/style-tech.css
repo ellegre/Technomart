@@ -17,7 +17,8 @@ a {
 
 .main-header {
 	background-color: #f3f7f9;
-	padding-bottom: 60px;
+	padding-bottom: 2px;
+	margin-bottom: 60px;
 }
 
 .container {
@@ -119,7 +120,7 @@ a {
 .order-navigation-list .bookmarks {
 	position: relative;
 	padding-left: 46px;
-	padding-top: 11px;
+	
 }
 
 .order-navigation-list .bookmarks::before {
@@ -138,7 +139,6 @@ a {
 .order-navigation-list .basket {
 	position: relative;
 	padding-left: 46px;
-	padding-top: 11px;
 	margin-left: 10px;
 }
 
@@ -197,9 +197,9 @@ a {
 }
 
 input::placeholder {
-	
 	color: white;
 }
+
 
 .i-shop {
 	color: #ee3643;
@@ -578,7 +578,8 @@ input::placeholder {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-bottom: 21px;
+	margin-bottom: 16px;
+	margin-top: 3px;
 	padding-left: 30px;
 	padding-right: 24px;
 	background-color: #f9f5f0;
@@ -599,7 +600,7 @@ input::placeholder {
 	vertical-align: middle;
 	padding: 10px 0;
 	margin-left: auto;
-	margin-top: 7px;
+	margin-top: 3px;
 	color: #ffffff;
 	width: 253px;
 	text-align: center;
@@ -615,14 +616,21 @@ input::placeholder {
 .goods-list-item {
 	position: relative;
 	width: 220px;
-	margin-bottom: 21px;
+	margin-bottom: 17px;
 	border: 1px solid #eaeaea;
 	text-align: center;
 	min-height: 318px;
+
 }
 
-.goods-list-item:hover .action {
+.goods-list-item:hover {
+
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.goods-list-item:hover .buttons {
 	display: block;
+
 }
 
 .first-price {
@@ -692,20 +700,17 @@ input::placeholder {
 	background-position: 0 0;
 } 
 
-.action {
+.buttons {
 	display: none;
 	position: absolute;
 	top: 0;
 	left: 0;
-	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
 }
 
-.buttons {
-	margin: 0 auto;
-	padding: 0 15px;
-	padding-top: 44px;
-	margin-bottom: 48px;
-}
  
 .button {
 	padding: 10px 0;
@@ -1016,7 +1021,13 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 65px;
 }
 
+.services {
+
+	background-color: #f4f7f9;
+}
+
 .about-company h3 {
+	margin: 0;
 	font-family: Cuprum;
 	font-size: 30px;
 	font-weight: 400;
@@ -1115,4 +1126,106 @@ input[type="radio"].visually-hidden {
 .map {
 	margin-bottom: 25px;
 	margin-top: 7px;
+}
+
+.services h3 {
+	padding-top: 66px;
+	margin-bottom: 26px;
+	font-family: Cuprum;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.services p {
+	width: 427px;
+	font-family: "PT Sans";
+	font-weight: 400;
+	line-height: 24px;
+	font-size: 14px;
+}
+
+.tab-list {
+	position: relative;
+	list-style: none;
+	width: 108%;
+	padding: 0;
+	margin: 0;
+	margin-top: 55px;
+	box-shadow: inset 0 -1px 0 #33445a;
+}
+
+.tab-list::after {
+	position: absolute;
+	content:"";
+	top: 0px;
+	left: 228px;
+	width: 15px;
+	height: 270px;
+	background-image: url("../img/shadow.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+}
+
+.tab-link {
+	display: block;
+	padding: 15px 23px;
+	padding-right: 215px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 30px;
+	vertical-align: middle;
+	background-color: #32425c;
+	border-bottom: 1px solid #4e637c;
+}
+
+.tab-link:focus,
+.tab-link:hover {
+	background-color: #293449;
+}
+
+.tab-link.current {
+	color: #32425c;
+	background-color: #ffffff;
+	border: none;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/icon-left.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0;
+}
+
+.slides-item:not(.current) {
+	display: none;
+}
+
+.producers {
+	margin-bottom: 57px;
+}
+
+.main-tab {
+	margin-left: 80px;
+}
+
+.main-tab h3 {
+	color: #32425c;
+	font-family: Cuprum;
+	font-size: 36px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: -9px;
+	margin-bottom: 28px;
+}
+
+.main-tab p {
+	width: 295px;
 }
