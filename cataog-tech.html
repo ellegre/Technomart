@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/slick.css">
 		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="css/nouislider.min.css">
 		<link rel="stylesheet" href="css/style-tech.css">	
 	</head>
 	<body>
@@ -66,60 +67,49 @@
 					        <h2 class="visually-hidden">Фильтр шаблонов</h2>
 						    <form method="get" action="https://echo.htmlacademy.ru">
 								<fieldset class="filter-item">
-								    <legend class="legend">Стоимость</legend>
-								    	<div class="range-filter">
-								          <div class="range-controls">
-								            <div class="scale">
-								              <div class="bar" style="margin-left: 8%; width: 59%"></div>
-								            </div>
-								            <div class="toggle toggle-min"><span class="visually-hidden">Минимальная цена</span></div>
-								            <div class="toggle toggle-max"><span class="visually-hidden">Максимальная цена</span></div>
+								    <legend class="legend">Цена</legend>
+								    	<div class="range-filter" id="range-filter">  
 								        </div>
 								        <div class="price-controls">
-								            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-								            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+								            <label class="min-price"><input name="min-price" type="text" value="0" id="min-price"></label>
+								            <label class="max-price"><input name="max-price" type="text" value="30000" id="max-price"></label>
 								        </div>
-								    </div>
 								</fieldset>
 								<fieldset class="filter-item">
-								    <legend class="legend">Сетка</legend>
+								    <legend class="legend">Производители:</legend>
 									<ul class="filter-group">
-								        <li class="adaptive">
-								            <input class="visually-hidden" type="radio" name="radio" id="filter-adaptive" checked>
-								            <label for="filter-adaptive">Адаптивная</label>
+								        <li class="filter-producers">
+								            <input class="visually-hidden" type="radio" name="radio" id="filter-bosch" checked>
+								            <label for="filter-bosch">Bosch</label>
 								        </li>
 								        <li>
-								            <input class="visually-hidden" type="radio" name="radio" id="filter-fix">
-								            <label for="filter-fix">Фиксированная</label>
+								            <input class="visually-hidden" type="radio" name="radio" id="filter-interscol">
+								            <label for="filter-interscol">Интерскол</label>
 								        </li>
 								        <li>
-								            <input class="visually-hidden" type="radio" name="radio" id="filter-rubber">
-								            <label for="filter-rubber">Резиновая</label>
+								            <input class="visually-hidden" type="radio" name="radio" id="filter-makita"checked>
+								            <label for="filter-makita">Makita</label>
+								        </li>
+								        <li>
+								            <input class="visually-hidden" type="radio" name="radio" id="filter-dewalt">
+								            <label for="filter-dewalt">Dewalt</label>
+								        </li>
+								        <li>
+								            <input class="visually-hidden" type="radio" name="radio" id="filter-hitachi">
+								            <label for="filter-hitachi">Hitachi</label>
 								        </li>
 						            </ul>
 						        </fieldset>
 								<fieldset class="filter-item">
-								    <legend class="legend">Особенности</legend>
+								    <legend class="legend">Питание:</legend>
 									<ul class="filter-group">
 							            <li>
 							                <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
-							                <label for="filter-slider">Слайдер</label>
+							                <label for="filter-slider">Аккумуляторные</label>
 							            </li>
 							            <li>
 							                <input class="visually-hidden" type="checkbox" name="feature-block" id="filter-feature-block">
-							                <label for="filter-feature-block">Блок преимуществ</label>
-							            </li>
-							            <li>
-							                <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
-							                <label for="filter-news">Новости</label>
-							            </li>
-							            <li>
-							                <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
-							                <label for="filter-gallery">Галерея</label>
-							            </li>
-							            <li>
-							                <input class="visually-hidden" type="checkbox" name="busket" id="filter-busket">
-							                <label for="filter-busket">Корзина</label>
+							                <label for="filter-feature-block">Сетевые</label>
 							            </li>
 							        </ul>
 							    </fieldset>
@@ -129,7 +119,7 @@
 					</div>
 					<div class="col-9">
 					    <section class="catalog">
-					       	<h2 class="visually-hidden">Список готовых шаблонов</h2>
+					       	<h2 class="visually-hidden">Список перфораторов</h2>
 						    <div class="sorting-container">
 							    <h2 class="visually-hidden">Сортировка</h2>
 							    <span class="sorting-item to-sort">Сортировать:</span>
@@ -143,90 +133,35 @@
 							        <li class="sorting-order-item"><a class="up-link" href="catalog.html"><span class="visually-hidden">По убыванию</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a></li>
 							    </ul>
 						    </div>
-						<div class="catalog-list-container">
-						    <ul class="catalog-list">
-						        <li class="catalog-item">
-						        	<img class="top-slider" src="img/top_slider.png" width="360" height="40" alt=""> 
-						        	<img src="img/img_sedona.jpg" width="360" height="576" alt="Макет сайта Sedona">
-						        	<div class="product-container">
-						        		<h3><a class="product-name" href="#">Sedona</a></h3>
-						        		<p>Информационный&#160;сайт для&#160;туристов</p>
-						        		<button class="button">9 900 руб.</button>
-						        	</div>
-						        </li>
-						        <li class="catalog-item">
-						          	<img class="top-slider" src="img/top_slider.png" width="360" height="40" alt=""> 
-						        	<img src="img/img_pink.jpg" width="360" height="576" alt="Макет сайта Pink">
-						        	<div class="product-container">
-						        		<h3><a class="product-name" href="#">Pink APP</a></h3>
-						        		<p>Продуктовый&#160;лендинг приложения&#160;для&#160;iOS&#160;и&#160;Android</p>
-						        		<button class="button">9 900 руб.</button>
-						        	</div>
-						        </li>
-						        <li class="catalog-item">
-						          	<img class="top-slider" src="img/top_slider.png" width="360" height="40" alt=""> 
-						        	<img src="img/img_barbershop.jpg" width="360" height="576" alt="Макет сайта Barbershop">
-						        	<div class="product-container">
-						        		<h3><a class="product-name" href="#">Barbershop</a></h3>
-						        		<p>Сайт&#160;салона&#160;красоты. Для&#160;мужчин,&#160;да.</p>
-						        		<button class="button">9 900 руб.</button>
-						        	</div>
-						        </li>
-						        <li class="catalog-item">
-						          	<img class="top-slider" src="img/top_slider.png" width="360" height="40" alt=""> 
-						        	<img src="img/img_mishka.jpg" width="360" height="576" alt="Макет сайта Mishka">
-						        	<div class="product-container">
-						        		<h3><a class="product-name" href="#">Mishka</a></h3>
-						        		<p>Интернет-магазин вязаных&#160;игрушек</p>
-						        		<button class="button">9 900 руб.</button>
-						        	</div>
-						        </li>
-						        <li class="catalog-item">
-						          	<img class="top-slider" src="img/top_slider.png" width="360" height="40" alt=""> 
-						        	<img src="img/img_aplus.jpg" width="360" height="576" alt="Макет сайта A-Plus">
-						        	<div class="product-container">
-						        		<h3><a class="product-name" href="#">A-plus</a></h3>
-						        		<p>Лендинг курсов повышения квалификации</p>
-						        		<button class="button">9 900 руб.</button>
-						        	</div>          
-						        </li>
-						        <li class="catalog-item">
-						          	<img class="top-slider" src="img/top_slider.png" width="360" height="40" alt=""> 
-						        	<img src="img/img_kvast.jpg" width="360" height="576" alt="Макет сайта Kvast">
-						        	<div class="product-container">
-						        		<h3><a class="product-name" href="#">Кваст</a></h3>
-						        		<p>Промо-сайт производителя крафтового кваса</p>
-						        		<button class="button">9 900 руб.</button>
-						        	</div>
-						        </li>          
-						    </ul>
-						</div>
-						    <div class="pagination-container">
-							    <ul class="pagination-list">
-								    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-								    <li class="pagination-item"><a href="#">2</a></li>
-								    <li class="pagination-item"><a href="#">3</a></li>
-								    <li class="pagination-item next"><a href="#">следующая</a></li>
-								</ul>
+							<div class="goods-list-item">
+								<img src="img/bfg_3000.png" width="184" height="164" alt="Изображение перфоратора">
+								<h3>Перфоратор&#160;BOSCH BFG&#160;3000</h3>
+								<p class="first-price">22500р.</p>
+								<p class="last-price">15500р.</p>
+								<div class="buttons">
+									<button class="button to-buy">Купить</button>
+									<button class="button to-bookmarks">В закладки</button>
+								</div>
 							</div>
-			      		</section>
-			      	</div>
-		      	</div>
-			
-			
-								<div class="goods-list-item">
-									<img src="img/bfg_9000.png" width="184" height="164" alt="Изображение перфоратора">
-									<h3>Перфоратор&#160;BOSCH BFG&#160;9000</h3>
-									<p class="first-price">32500р.</p>
-									<p class="last-price">25500р.</p>
+							<div class="goods-list-item">
+								<img src="img/bfg_6000.png" width="184" height="164" alt="Изображение перфоратора">
+								<h3>Перфоратор&#160;BOSCH BFG&#160;6000</h3>
+								<p class="first-price">30500р.</p>
+								<p class="last-price">25500р.</p>
+								<div class="buttons">
+										<button class="button to-buy">Купить</button>
+										<button class="button to-bookmarks">В закладки</button>
+								</div>
+							</div>
+							<div class="goods-list-item new">
+									<img src="img/bfg_2000.png" width="184" height="164" alt="Изображение перфоратора">
+									<h3>Перфоратор&#160;BOSCH BFG&#160;2000</h3>
+									<p class="last-price">12500р.</p>
 									<div class="buttons">
 										<button class="button to-buy">Купить</button>
 										<button class="button to-bookmarks">В закладки</button>
-									</div>
-								</div>
 							</div>
-							<div class="col-3">
-								<div class="goods-list-item">
+							<div class="goods-list-item">
 									<img src="img/bfg_3000.png" width="184" height="164" alt="Изображение перфоратора">
 									<h3>Перфоратор&#160;BOSCH BFG&#160;3000</h3>
 									<p class="first-price">22500р.</p>
@@ -234,10 +169,8 @@
 									<div class="buttons">
 										<button class="button to-buy">Купить</button>
 										<button class="button to-bookmarks">В закладки</button>
+										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-3">
 								<div class="goods-list-item">
 									<img src="img/bfg_6000.png" width="184" height="164" alt="Изображение перфоратора">
 									<h3>Перфоратор&#160;BOSCH BFG&#160;6000</h3>
@@ -246,10 +179,8 @@
 									<div class="buttons">
 										<button class="button to-buy">Купить</button>
 										<button class="button to-bookmarks">В закладки</button>
-										</div>
 									</div>
 								</div>
-							<div class="col-3">
 								<div class="goods-list-item new">
 									<img src="img/bfg_2000.png" width="184" height="164" alt="Изображение перфоратора">
 									<h3>Перфоратор&#160;BOSCH BFG&#160;2000</h3>
@@ -257,15 +188,26 @@
 									<div class="buttons">
 										<button class="button to-buy">Купить</button>
 										<button class="button to-bookmarks">В закладки</button>
-										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
+							    <div class="pagination-container">
+								    <ul class="pagination-list">
+									    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+									    <li class="pagination-item"><a href="#">2</a></li>
+									    <li class="pagination-item"><a href="#">3</a></li>
+									    <li class="pagination-item next"><a href="#">следующая</a></li>
+									</ul>
+								</div>
+			      		</section>
+			      	</div>
 				</div>
-			</section>
-			
+			</div>
+			<article class="about-punchers">
+				<h2>Пара слов о перфораторах</h2>
+				<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+				Существуют&#160;электромеханические&#160;и&#160;пневматические&#160;перфораторы.&#160;Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+				</p>
+			</article>
 		</main>
 		<footer class="main-footer">
 			<div class="footer-top">
@@ -327,7 +269,17 @@
 				</div>
 			</div>
 		</footer>
+		<section class="modal modal-login-cart">
+			<p>Товар добавлен в корзину!</p>
+			<div class="modal-buttons-container">
+				<button class="button">Оформить заказ</button>
+				<button class="button">Продолжить покупки</button>
+			</div>
+			<button class="modal-close" type="button">Закрыть</button>
+		</section>
 		<script src="js/jquery-3.3.1.min.js">
+		</script>
+		<script src="js/nouislider.min.js">
 		</script>
 		<script src="js/slick.min.js">	
 		</script>
