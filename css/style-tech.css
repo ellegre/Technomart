@@ -196,10 +196,15 @@ a {
 	border: none;
 }
 
-input::placeholder {
+.search-form input::placeholder {
 	color: white;
 }
 
+.search-form input[type="search"]:focus {
+	color: #555555;
+	background-color: #ffffff;
+	font: inherit;
+}
 
 .i-shop {
 	color: #ee3643;
@@ -405,6 +410,13 @@ input::placeholder {
 	max-width: 33.33%;
 	padding: 0 10px;
 	margin-bottom: 20px;
+}
+
+.col-6 {
+	box-sizing: border-box;
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 0 10px;
 }
 
 .row {
@@ -1030,7 +1042,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services {
-
+	margin-bottom: 84px;
 	background-color: #f4f7f9;
 }
 
@@ -1151,7 +1163,7 @@ input[type="radio"].visually-hidden {
 	font-family: "PT Sans";
 	font-weight: 400;
 	line-height: 24px;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 .tab-list {
@@ -1240,7 +1252,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-tab .short {
-	width: 352px;
+	width: 307px;
 }
 
 #tab-1 {
@@ -1574,11 +1586,23 @@ text-transform: uppercase;
 }
 
 .modal-login-cart {
+	display: none;
 	top: 120px;
 	left: 50%;
 	margin-left: -312px;
 	color: #000000;
 	width: 626px;
+	border-top: 5px solid #ee3643;
+	box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
+}
+
+.modal-login {
+	display: none;
+	top: 120px;
+	left: 50%;
+	margin-left: -312px;
+	color: #000000;
+
 
 	border-top: 5px solid #ee3643;
 	box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
@@ -1601,15 +1625,19 @@ text-transform: uppercase;
 
 .modal-buttons-container {
 	background-color: #f1f1f1;
-	padding: 34px 0;
+	padding: 37px 80px;
+}
 
+.modal-button-container {
+	background-color: #f1f1f1;
+	padding: 37px 80px;
 }
 
 .modal-login-cart p {
 	position: relative;
 	margin-top: 67px;
 	margin-left: 182px;
-	margin-bottom: 72px;
+	margin-bottom: 71px;
 	font-family: Cuprum;
 	font-size: 30px;
 	font-weight: 400;
@@ -1630,5 +1658,133 @@ text-transform: uppercase;
 
 .modal-buttons-container button {
 	width: 220px;
-	padding: 8px 0;
+	padding: 10px 0;
+	border: none;
+	border-radius: 3%;
+	color: #000000;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+	text-transform: uppercase;
+	background-color: #ffffff;
 }
+
+.modal-buttons-container .to-order {
+	margin-right: 20px;
+	color: #ffffff;
+	background-color: #ee3643;
+	font-weight: 400;
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.message-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.modal-description {
+    width: 360px;
+    margin-bottom: 21px;
+}
+
+.letter-text {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.log-out-link {
+	margin-top: 3px;
+	margin-left: 29px;
+}
+
+.log-out-link:hover path,
+.log-out-link:focus path {
+	fill: #32425c;
+}
+
+.log-out-link:active path {
+	fill: #c5c5c5;
+}
+
+.user-navigation-list .log-in-link:hover,
+.user-navigation-list .log-in-link:focus {
+	color: #000000;
+}
+
+.user-navigation-list .log-in-link:active {
+	color: #c5c5c5;
+}
+
+.authorization {
+	display: inline-block;
+	margin-right: 10px;
+
+}
+
+.user-navigation-list .log-in-link:hover path,
+.user-navigation-list .log-in-link:focus path {
+	fill: #32425c;
+}
+
+.user-navigation-list .log-in-link:active path {
+	fill: #c5c5c5;
+}
+
+.my-information a {
+	display: block;
+	color: #32425c;
+	font-family: Cuprum;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+.my-information a:hover,
+.my-information a:focus {
+	color: #ee3643;
+}
+
+.my-information a:active {
+	color: #bfc6ce;
+}
+
+.my-information a:nth-child(2) {
+	margin-left: 10px;
+}
+
+.dot {
+	width: 4px;
+	height: 4px;
+	background-color: #32425c;
+	border-radius: 50%;
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+.adress-and-registration.catalog-navigation {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.my-information {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-left: 69px;
+	margin-top: 18px;
+}
+
+.user-navigation-list.user-authorization {
+	background-color: #ffffff;
+	padding-top: 14px;
+	padding-bottom: 11px;
+	padding-left: 47px;
+	padding-right: 69px;
+} 

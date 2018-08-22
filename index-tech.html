@@ -35,7 +35,7 @@
 							<p class="telephone">+7 (812) 555-05-55</p>
 							<p class="company-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						</div>
-						<ul class="user-navigation-list">
+						<ul class="user-navigation-list-index">
 							<li><a class="login-link" href="#">Войти</a></li>
 							<li><a class="registration-link" href="#">Регистрация</a></li>
 						</ul>
@@ -338,6 +338,26 @@
 				</div>
 			</div>
 		</footer>
+		<section class="modal modal-login">
+			<form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+				<p class="modal-description">
+			      <label for="user-name">Ваше имя:</label>
+			      <input  id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+			    </p>
+			    <p class="modal-description">
+			      <label for="user-mail">Ваш e-mail</label>
+			      <input  id="user-mail" type="text" name="e-mail" placeholder="email@example.com">
+			    </p>
+			    <p class="modal-description letter-text">
+				    <label for="user-text">Текст письма:</label>
+				    <textarea name="text" id="user-text" placeholder="В свободной форме"></textarea>
+				</p>
+				<div class="modal-button-container">
+					<button class="btn" type="submit">Отправить заказ</button>
+				</div>
+			</form>
+		<button class="modal-close" type="button">Закрыть</button>		
+		</section>
 		<script src="js/jquery-3.3.1.min.js">
 		</script>
 		<script src="js/slick.min.js">	
