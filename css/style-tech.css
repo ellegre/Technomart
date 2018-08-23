@@ -258,8 +258,9 @@ a {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: 66px;
-	margin-top: 10px;
+	margin-left: 33px;
+	margin-top: 7px;
+	margin-bottom: -11px;
 }
 
 .user-navigation-list a {
@@ -430,7 +431,7 @@ a {
 	flex: 0 0 66.66%;
 	max-width: 66.66%;
 	padding: 0 10px;
-	margin-bottom: 20px;
+
 }
 
 .col-9 {
@@ -438,7 +439,7 @@ a {
 	flex: 0 0 75%;
 	max-width: 75%;
 	padding: 0 10px;
-	margin-bottom: 20px;
+
 }
 
 .category {
@@ -1700,7 +1701,8 @@ text-transform: uppercase;
 
 .log-out-link {
 	margin-top: 3px;
-	margin-left: 29px;
+	margin-left: 33px;
+	padding-right: 10px;
 }
 
 .log-out-link:hover path,
@@ -1784,7 +1786,88 @@ text-transform: uppercase;
 .user-navigation-list.user-authorization {
 	background-color: #ffffff;
 	padding-top: 14px;
-	padding-bottom: 11px;
-	padding-left: 47px;
-	padding-right: 69px;
+	padding-bottom: 10px;
+	padding-left: 31px;
+	padding-right: 0px;
 } 
+
+
+.noUi-connect {
+	width: 157px;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.noUi-origin {
+	background-image: url("../img/filter-button.png");
+	background-repeat: no-repeat;
+	z-index: 4;
+}
+
+.sorting-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: #f7f3ec;
+}
+
+.sorting-criteria {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	justify-content: space-between;
+	margin: 0;
+	margin-left: 139px;
+	padding: 0;
+	padding: 11px 0;
+}
+
+.sorting-order {
+	margin-left: 46px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding: 11px 0;
+}
+
+.sorting-order a:hover path,
+.sorting-order a:focus path {
+	fill: #231f20;
+}
+
+.sorting-order a:active path {
+	fill: #ee3643;
+}
+
+.to-sort {
+	margin-left: 20px;
+	font-family: "PT Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.sorting-criteria-item {
+	font-family: "PT Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #b2b2b2;
+}
+
+.sorting-criteria-item:hover,
+.sorting-criteria-item:focus {
+	color: #222222;
+}
+
+.sorting-criteria-item:active {
+	color: #ee3643;
+}
+
+
+
+

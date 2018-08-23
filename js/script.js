@@ -16,6 +16,7 @@ var inputs = [input0, input1];
 
 noUiSlider.create(keypressSlider, {
 	start: [0, 30000],
+	margin: -10,
 	connect: true,
 	step: 1,
 	range: {
