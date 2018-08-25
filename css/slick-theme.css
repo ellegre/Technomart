@@ -195,7 +195,8 @@
     opacity: .25;
     color: #ffffff;
 
-    background-image: url("../img/icon-3.svg");
+    background-image: url("../img/slider_dots_white.png");
+    background-repeat: no-repeat;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -204,4 +205,6 @@
 {
     opacity: .75;
     color: white;
+    background-image: url("../img/red_white_dot.png");
+    background-repeat: no-repeat;
 }
