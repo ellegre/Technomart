@@ -17,12 +17,14 @@ var inputs = [input0, input1];
 noUiSlider.create(keypressSlider, {
 	start: [0, 30000],
 	margin: -10,
+	format: wNumb({decimals: 0 }),
 	connect: true,
 	step: 1,
 	range: {
 		'min': 0,
 		'max': 30000
 	}
+
 });
 
 keypressSlider.noUiSlider.on('update', function( values, handle ) {

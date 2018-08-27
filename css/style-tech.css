@@ -1413,8 +1413,10 @@ input[type="radio"].visually-hidden {
 }
 
 .range-filter {
-  width: 260px;
+  width: 196px;
   margin-top: 49px;
+  margin-bottom: 30px;
+  background-color: #f7f3ec;
 }
 
 .filter-item legend {
@@ -1483,7 +1485,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls input {
   width: 60px;
-  padding: 8px 10px;
+  padding: 13px 19px;
   margin-left: 10px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -1763,6 +1765,10 @@ text-transform: uppercase;
 	fill: #ee3643;
 }
 
+.sorting-order .sorting-order-item-current path {
+		fill: #ee3643;
+}
+
 .to-sort {
 	margin-left: 20px;
 	font-family: "PT Sans";
@@ -2002,3 +2008,118 @@ text-transform: uppercase;
 	text-transform: uppercase;
 	background-color: #ee3643;
 }
+
+.filter-item .legend:first-child {
+	margin-bottom: 2px;
+}
+
+.noUi-horizontal .noUi-handle {
+	position: relative;
+
+}
+
+.noUi-horizontal .noUi-handle:before {
+	position: absolute;
+	content: "";
+	top: -4px;
+	left: 7px;
+	width: 20px;
+	height: 23px;
+	background-image: url("../img/filter-button.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+html:not([dir=rtl]) .noUi-horizontal .noUi-origin  {
+	right: -155px;
+}
+
+.noUi-horizontal .noUi-handle {
+	background-color: #f7f3ec;
+	border-radius: 50%;
+	width: 3px;
+	height: 3px;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+	background-color: #ffffff;
+	outline: none;
+}
+
+.catalog .goods-list-item:nth-child(3) {
+
+}
+
+.filter-button {
+	font-family: "PT Sans";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	padding: 10px 38px;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	cursor: pointer;
+}
+
+.filter-item:nth-child(3) label {
+  position: relative;
+}
+
+.filter-item:nth-child(3) label::before {
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: -36px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-group input[type="radio"]:checked ~ label::before {
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-group input[type="radio"]:hover ~ label::before,
+.filter-group input[type="radio"]:focus ~ label::before {
+  opacity: 1;
+}
+
+.filter-item:nth-child(2) label {
+  position: relative;
+}
+
+.filter-item:nth-child(2) label::before {
+  position: absolute;
+  content: "";
+  top: -1px;
+  left: -36px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-group input[type="checkbox"]:checked ~ label::before {
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-group input[type="checkbox"]:hover ~ label::before,
+.filter-group input[type="checkbox"]:focus ~ label::before {
+  opacity: 1;
+}
+
+.filter-group input[type="checkbox"]:active ~ label::before {
+  opacity: 0.1;
+}
+
