@@ -13,11 +13,10 @@ var keypressSlider = document.getElementById('range-filter');
 var input0 = document.getElementById('min-price');
 var input1 = document.getElementById('max-price');
 var inputs = [input0, input1];
-
-noUiSlider.create(keypressSlider, {
+if ($(".range-filter").lenght) {
+	noUiSlider.create(keypressSlider, {
 	start: [0, 30000],
 	margin: -10,
-	format: wNumb({decimals: 0 }),
 	connect: true,
 	step: 1,
 	range: {
@@ -26,10 +25,13 @@ noUiSlider.create(keypressSlider, {
 	}
 
 });
+}
 
+if ($(".range-filter").lenght) {
 keypressSlider.noUiSlider.on('update', function( values, handle ) {
 	inputs[handle].value = values[handle];
 });
+}
 
 function setSliderHandle(i, value) {
 	var r = [null,null];
@@ -38,6 +40,7 @@ function setSliderHandle(i, value) {
 }
 
 // Listen to keydown events on the input field.
+if ($(".range-filter").lenght) {
 inputs.forEach(function(input, handle) {
 
 	input.addEventListener('change', function(){
@@ -99,33 +102,35 @@ inputs.forEach(function(input, handle) {
 		}
 	});
 });
-  var link = document.querySelector(".login-link");
+}
+if($(".write-us").lenght) {
+  var link = document.querySelector(".write-us");
   
-  var popup = document.querySelector(".modal-login");
+  var popup = document.querySelector(".modal-write-us");
   var close = popup.querySelector(".modal-close");
   
   var form = popup.querySelector("form");
-  var login = popup.querySelector("[name=login]");
-  var password = popup.querySelector("[name=password]");
+  var name = popup.querySelector("[name=name]");
+  var email = popup.querySelector("[name=email]");
   
   var isStorageSupport = true;
-  var storage = "";
+var storage = "";
 
-  try {
-    storage = localStorage.getItem("login");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-  
+try {
+		storage = localStorage.getItem("login");
+	} catch (err) {
+		isStorageSupport = false;
+	}
+
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     
     if (storage) {
-      login.value = storage;
-      password.focus();
+      name.value = storage;
+      email.focus();
     } else {
-      login.focus();
+      name.focus();
     }
   });
   
@@ -157,3 +162,4 @@ inputs.forEach(function(input, handle) {
       }
     }
   });
+}
