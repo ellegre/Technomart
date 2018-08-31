@@ -13,7 +13,7 @@ var keypressSlider = document.getElementById('range-filter');
 var input0 = document.getElementById('min-price');
 var input1 = document.getElementById('max-price');
 var inputs = [input0, input1];
-if ($(".range-filter").lenght) {
+if ($(".range-filter").length) {
 	noUiSlider.create(keypressSlider, {
 	start: [0, 30000],
 	margin: -10,
@@ -27,9 +27,9 @@ if ($(".range-filter").lenght) {
 });
 }
 
-if ($(".range-filter").lenght) {
+if ($(".range-filter").length) {
 keypressSlider.noUiSlider.on('update', function( values, handle ) {
-	inputs[handle].value = values[handle];
+	inputs[handle].value = Math.round(values[handle]);
 });
 }
 
@@ -40,7 +40,7 @@ function setSliderHandle(i, value) {
 }
 
 // Listen to keydown events on the input field.
-if ($(".range-filter").lenght) {
+if ($(".range-filter").length) {
 inputs.forEach(function(input, handle) {
 
 	input.addEventListener('change', function(){
@@ -103,7 +103,7 @@ inputs.forEach(function(input, handle) {
 	});
 });
 }
-if($(".write-us").lenght) {
+if($(".write-us").length) {
   var link = document.querySelector(".write-us");
   
   var popup = document.querySelector(".modal-write-us");
